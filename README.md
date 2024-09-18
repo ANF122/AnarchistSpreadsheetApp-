@@ -1,4 +1,4 @@
-Anarcode
+
 Anarcode est un langage de programmation inspiré par des principes anarchistes, utilisant les concepts de liberté, équité, et solidarité.
 
 Commandes de Base
