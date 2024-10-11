@@ -1,0 +1,24 @@
+# cmm.yml
+
+# Grammaire de base pour le langage Communica
+name: Communica
+type: programming
+
+# Extensions de fichiers
+extensions:
+  - .cmm
+
+# Expressions régulières pour les types de syntaxe
+contexts:
+  main:
+    - comment: 'Commentaire uniligne'
+      match: '#.*'
+    - keyword: 'Fonction'
+      match: 'fonu'
+    - keyword: 'Afficher'
+      match: 'diksa'
+    - variable: 'Variable'
+      match: '[a-zA-Z_][a-zA-Z0-9_]*'
+    - number: 'Nombre'
+      match: '[0-9]+'
+    - whitespace: '\s+'
