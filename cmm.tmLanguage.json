@@ -8,7 +8,7 @@
     },
     {
       "name": "keyword.control.communica",
-      "match": "\\b(fonu|diksa)\\b"
+      "match": "\\b(fonu|diksa|si|alors|sinon|pour|tantque)\\b"
     },
     {
       "name": "variable.other.communica",
@@ -17,8 +17,30 @@
     {
       "name": "constant.numeric.communica",
       "match": "\\b\\d+\\b"
+    },
+    {
+      "name": "constant.numeric.decimal.communica",
+      "match": "\\b\\d+\\.\\d+\\b"
+    },
+    {
+      "name": "string.quoted.double.communica",
+      "match": "\"(\\\\.|[^\\\\\"])*\""
+    },
+    {
+      "name": "keyword.control.conditional.communica",
+      "match": "\\b(si|alors|sinon)\\b"
+    },
+    {
+      "name": "keyword.control.loop.communica",
+      "match": "\\b(pour|tantque)\\b"
+    },
+    {
+      "name": "entity.name.function.communica",
+      "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\s*\\("
+    },
+    {
+      "name": "keyword.operator.communica",
+      "match": "[+\\-*/=<>!]+"
     }
-  ],
-  "repository": {},
-  "scopeName": "source.communica"
+  ]
 }
