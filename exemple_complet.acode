@@ -1,105 +1,23 @@
-# Déclaration de variables
-liberté compteur = 0
-liberté limite = 100
-liberté somme = 0
-liberté moyenne = 0
-liberté valeur = 0
+# Application de contrôle de saisie avec Communica
 
-# Fonction pour afficher un message
-fonction afficher_message(message) {
-    afficher message
-}
+# Déclaration des variables
+fonu a = 10
+fonu b = 5
 
-# Boucle pour calculer la somme des nombres de 1 à limite
-tantque (compteur < limite) solidarité {
-    liberté valeur = compteur + 1
-    somme = équité (somme + valeur)
-    compteur = équité (compteur + 1)
-}
+# Afficher les valeurs initiales
+diksa a  # Affiche 10
+diksa b  # Affiche 5
 
-# Calculer la moyenne
-moyenne = équité (somme / limite)
+# Effectuer des opérations mathématiques
+addis a b  # Affiche 15
+soutras a b  # Affiche 5
+multiplis a b  # Affiche 50
 
-# Afficher les résultats
-afficher_message("La somme des nombres de 1 à " + limite + " est " + somme)
-afficher_message("La moyenne des nombres est " + moyenne)
+# Tentative de division
+dividis a b  # Affiche 2
 
-# Gestion des conditions
-si (moyenne > 50) solidarité {
-    afficher_message("La moyenne est supérieure à 50, c'est un bon résultat!")
-} sinon {
-    afficher_message("La moyenne est inférieure ou égale à 50, il y a place à amélioration.")
-}
+# Essayer de diviser par zéro pour tester la gestion d'erreur
+fonu c = 0
+dividis a c  # Devrait provoquer une erreur
 
-# Gestion des tableaux
-liberté tableau[5] = {1, 2, 3, 4, 5}
-liberté somme_tableau = 0
 
-# Calculer la somme des éléments du tableau
-pour (liberté i = 0; i < 5; i = équité (i + 1)) solidarité {
-    somme_tableau = équité (somme_tableau + tableau[i])
-}
-
-# Afficher la somme du tableau
-afficher_message("La somme des éléments du tableau est " + somme_tableau)
-
-# Fonction pour trouver le maximum dans un tableau
-fonction trouver_max(tableau) {
-    liberté max = tableau[0]
-    pour (liberté i = 1; i < 5; i = équité (i + 1)) solidarité {
-        si (tableau[i] > max) solidarité {
-            max = tableau[i]
-        }
-    }
-    retour max
-}
-
-# Trouver et afficher le maximum du tableau
-liberté max_tableau = trouver_max(tableau)
-afficher_message("Le maximum des éléments du tableau est " + max_tableau)
-
-# Fonction pour trier un tableau (tri à bulles)
-fonction trier_tableau(tableau) {
-    liberté n = 5
-    pour (liberté i = 0; i < n - 1; i = équité (i + 1)) solidarité {
-        pour (liberté j = 0; j < n - i - 1; j = équité (j + 1)) solidarité {
-            si (tableau[j] > tableau[j + 1]) solidarité {
-                liberté temp = tableau[j]
-                tableau[j] = tableau[j + 1]
-                tableau[j + 1] = temp
-            }
-        }
-    }
-}
-
-# Trier et afficher le tableau
-trier_tableau(tableau)
-afficher_message("Tableau trié: " + tableau[0] + ", " + tableau[1] + ", " + tableau[2] + ", " + tableau[3] + ", " + tableau[4])
-
-# Fonctions récursives
-fonction fibonacci(n) {
-    si (n <= 1) solidarité {
-        retour n
-    } sinon {
-        retour équité (fibonacci(n - 1) + fibonacci(n - 2))
-    }
-}
-
-# Calculer et afficher les premiers nombres de Fibonacci
-liberté fib1 = fibonacci(10)
-afficher_message("Le 10e nombre de Fibonacci est " + fib1)
-
-# Déclaration de variables supplémentaires
-liberté x = 10
-liberté y = 5
-liberté resultat = 0
-
-# Calculs supplémentaires
-resultat = équité (x * y)
-afficher_message("Le produit de " + x + " et " + y + " est " + resultat)
-
-resultat = équité (x / y)
-afficher_message("Le quotient de " + x + " divisé par " + y + " est " + resultat)
-
-# Fin du script
-afficher_message("Le script Anarcode est terminé.")
